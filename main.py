@@ -35,7 +35,7 @@ def main():
     # pickle.dump(text_labels, open('./data/text_labels.pkl', 'wb'))
 
     hete_g = pickle.load(open('./data/hete_g.pkl', 'rb'))
-    texts = pickle.load(open('./data/texts.pkl', 'rb'))
+    # texts = pickle.load(open('./data/texts.pkl', 'rb'))
     text_labels = pickle.load(open('./data/text_labels.pkl', 'rb'))
 
     homo_g = dgl.to_homogeneous(hete_g, store_type=True)
